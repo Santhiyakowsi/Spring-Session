@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="cust" class="com.demo.Spring_Core.Customer" >
+<property name="name" value="santhiya"></property>
+<property name="email" value="santiya@gmail.com"></property>
+</bean>   
+
+<bean id="order1" class="com.demo.Spring_Core.order">
+	<property name="payment" value="via 3rd party"></property>
+	<property name="customer" ref="cust">
+	</property>
+</bean>
+</beans>
