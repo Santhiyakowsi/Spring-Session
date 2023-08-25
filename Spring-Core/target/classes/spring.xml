@@ -4,7 +4,7 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="cust" class="com.demo.Spring_Core.Customer" >
+<bean id="cust" class="com.demo.Spring_Core.Customer" scope="prototype">
 <property name="name" value="santhiya"></property>
 <property name="email" value="santiya@gmail.com"></property>
 </bean>   

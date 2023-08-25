@@ -43,9 +43,9 @@ public class order implements Ecommerce {
 		this.customer = customer;
 	}
 	//@Override
-	//public String toString() {
-		//return "order [customer=" + customer + "]";
-	//}
+	public String toString() {
+		return "order [customer=" + customer + "]";
+	}
 	public void PrintCustomer() {
 		customer.detail();
 		System.out.println(customer.getName());
